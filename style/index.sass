@@ -42,21 +42,22 @@ header
         +lg
             height: 700px
         +md
-            background-image: url(../source/img/sp/bg.png)
+            background-image: url(../source/img/sp/bg.jpg)
             height: 1024px
         +sm
-            background-image: url(../source/img/sp/bgsm.png)
+            background-image: url(../source/img/sp/bgsm.jpg)
             height: 100vh
             min-height: 568px
             background-size: cover
             
     .container
-        position: relative
+        position: absolute
         height: 100vh
         min-height: 850px
-        +center
+        left: 230px
         +xxxl
             min-height: 768px
+            left: 5vw
         +xxl
             min-height: 700px
         +ipad-pro
@@ -70,55 +71,42 @@ header
             position: absolute
             +y-center
             top: 55%
-            left: -250px
             width: 35vw
             max-width: 700px
+            left: 0
             +xxxl
                 width: 500px
                 max-width: 600px
-                left: 0
-            
-            +xl
-                left: -50px
             +ipad-pro
                 width: 450px
-                left: 0
 
             +lg
                 width: 350px
-                left: -20px
+        
         a.jh    
             img.logo
                 position: absolute
                 top: 50px
-                left: -250px
+                left:0px
                 width: 50px
                 +xxxl
-                    left: 0
                 
                 +xl
-                    left: -50px
                 +ipad-pro
                     width: 48px
-                    left: 0
                 +lg
                     width: 40px
-                    left: -20px
         
                 
         img.ball
             position: absolute
             bottom: 50px
-            left: -250px
             +xxxl
                 left: 0
             +xl
-                left: -50px
                 width: 90px
             +ipad-pro
-                left: 0
             +lg
-                left: -20px
                 width: 80px
     a.jh.under_md
         position: absolute
@@ -613,6 +601,7 @@ section#sns
                     z-index: 1
                 +lg
                     width: 100%
+                
                 +sm
                     margin-top: 90px
                     padding: 10px 10px
@@ -674,7 +663,7 @@ section#sns
                                         width: 400px
                                         filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.2))
                                         &:hover
-                                            transform: translate(0%, 5px)
+                                            
                                             filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3))
                                         +xl
                                             width: 300px
@@ -682,7 +671,10 @@ section#sns
                                             padding: 15px                        
                                             width: 250px
                                         +md
-                                            +x-center
+                                            left: 50%
+                                            transform: translateX(-50%) 
+                                            &:hover
+                                                transform: translateX(-50%)
                                         +sm
                                             width: 200px
                             .notice
@@ -907,7 +899,7 @@ section#share
                         
 section#sponser
     padding: 200px 0
-    background-image: url(../source/img/bg/bg2.png)
+    background-image: url(../source/img/bg/bg2.jpg)
     background-size: cover
     +xxl
         padding: 100px 0
