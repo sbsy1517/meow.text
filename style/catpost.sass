@@ -1,0 +1,105 @@
+#cat
+    width: 130vw
+    position: absolute 
+    +center
+    .owl-item
+        position: relative
+        height: 400px
+        .item
+            display: inline-block
+            opacity: .7
+            -webkit-transform: scale3d(0.8, 0.8, 1) 
+            transform: scale3d(0.8, 0.8, 1) 
+            -webkit-transition: all 0.3s ease-in-out 
+            -moz-transition: all 0.3s ease-in-out 
+            transition: all 0.3s ease-in-out 
+
+            h2.title
+                display: none
+            img
+                filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5))
+                width: 800px
+                position: absolute
+                top:200px
+            .inside-wrap
+                display: none
+                
+                    
+    
+    
+    .owl-item.active.center 
+       
+        .item 
+            opacity: 1 
+            -webkit-transform: scale3d(1.0, 1.0, 1) 
+            transform: scale3d(1.0, 1.0, 1) 
+            
+            h2.title
+                display: inline-block
+                padding: 20px 50px
+                text-align: center
+                background-color: white
+                margin-bottom: 40px
+                +x-center
+            img
+                width: 100%
+                position: relative
+                top: auto
+                transform: translateY(0%)
+            .inside-wrap
+                display: flex
+                align-items: center
+                margin-top: 30px
+                img
+                    width: 150px
+                    margin: auto 40px auto
+                    
+                .p-wrap
+                    
+                    p
+                        font-family: inherit 
+                        font-size: 17px 
+                        line-height: 1.5 
+                        font-weight: 300 
+                        width: 100%
+                        margin: 20px 0px
+
+                    .btn
+                        height: 40px
+                        background-color: blue
+                        width: 100%
+                        border-radius: 20px
+                        color: white
+    
+                        
+                    
+    &.owl-carousel 
+        .owl-dots 
+            display: inline-block 
+            width: 100% 
+            text-align: center 
+            .owl-dot 
+                display: inline-block 
+                span 
+                    background: #3190E7 
+                    display: inline-block 
+                    height: 20px 
+                    margin: 0 2px 5px 
+                    transform: translate3d(0px, -50%, 0px) scale(0.3) 
+                    transform-origin: 50% 50% 0 
+                    transition: all 250ms ease-out 0s 
+                    width: 20px 
+
+.owl-carousel 
+    .owl-item 
+        img 
+            transform-style: preserve-3d 
+            // max-width: 90px 
+            // margin: 0 auto 17px
+// #cat.owl-carousel.owl-dots.owl-dot.active span,
+// #cat.owl-carousel.owl-dots.owl-dot:hover span 
+//     background: #3190E7 
+//     transform: translate3d(0px, -50%, 0px) scale(0.7)   
+    .owl-nav
+        
+        +x-center

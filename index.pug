@@ -1,0 +1,409 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link( href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+        link(rel="stylesheet", href="style/all.css")
+        
+        title 貓咪週間
+         // Google Tag Manager
+        script.
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-58VMF8Z');
+            // End Google Tag Manager
+            // Global site tag (gtag.js) - Google Analytics
+            script(async src='https://www.googletagmanager.com/gtag/js?id=UA-70242828-1')
+            // GA
+            script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-70242828-1');
+            // GA
+            // Hotjar Tracking Code for https://www.japaholic.com/tw/
+            // Hotjar Tracking Code for https://www.japaholic.com/tw/
+            script.
+            (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2268606,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+        
+    body 
+        main
+            header
+                .block.over_md 
+                .fv
+                .container
+                    
+                    img.cat-logo.over_md(src="source/img/logo/cat-logo.png", alt="")
+                    a.jh.over_md(href="https://www.japaholic.com/tw/" target="_blank" title="前往 Japaholic官網") 
+                        img.logo(src="source/img/logo/logo90.png", alt="")
+                    
+                    img.ball.over_md(src="source/img/logo/ball.png", alt="")
+                a.jh.under_md(href="https://www.japaholic.com/tw/" target="_blank" title="前往 Japaholic官網") 
+                    img.logo(src="source/img/logo/logo.png", alt="")
+                
+            section#cat_post 
+                .bg
+                    .bg_top
+                    .bg_bottom
+                .container
+
+                    .carousel.slide#catpost(data-bs-ride="carousel")
+                        
+                        .carousel-inner 
+                            .carousel-item.active
+                                .wrap-outside 
+                                    .wrap 
+                                        .title 賓士貓 - 玩味貓 
+                                        img(src="source/img/cat/01.png", alt="")
+                                        
+                                        .card-content 
+                                            
+                                            
+                                            p.over_md 新手貓奴閱覽注意，一個不小心就會買爆的貓咪用品特輯
+                                            p.under_md 新手貓奴閱覽注意，
+                                                br
+                                                |一個不小心就會買爆的貓咪用品特輯
+                                            a(href="https://www.japaholic.com/tw/article/869570/" target="_blank" title="看文章去喵").button 看文章去喵
+                                    
+                            .carousel-item 
+                                .wrap-outside
+                                    .wrap 
+                                        .title 橘貓 - 吃貨貓
+                                        img(src="source/img/cat/02.png", alt="")
+                                        
+                                        .card-content 
+                                            
+                                            p 貓奴進得去出不來，超夢幻貓咪村莊開箱
+                                            a(href="https://www.japaholic.com/tw/article/738535/" target="_blank" title="看文章去喵").button 看文章去喵
+                            .carousel-item 
+                                .wrap-outside
+                                    .wrap#ten 
+                                        .title 黑貓 - 追劇貓 
+                                        img(src="source/img/cat/06.png", alt="")
+                                        
+                                        .card-content 
+                                            
+                                            p 原來這麼多日劇都有貓咪！在宅追起來！
+                                            a(href="https://www.japaholic.com/tw/article/825612/" target="_blank" title="看文章去喵").button 看文章去喵        
+                                    
+                            
+                                    
+                            .carousel-item 
+                                .wrap-outside
+                                    .wrap#ten 
+                                        .title 三花貓 - 養生貓 
+                                        img(src="source/img/cat/04.png", alt="")
+                                        
+                                        .card-content 
+                                            
+                                            p 日本製，安心有保障！日本貓食推薦
+                                            a(href="https://www.japaholic.com/tw/article/869256/" target="_blank" title="看文章去喵").button 看文章去喵
+                            .carousel-item 
+                                .wrap-outside
+                                    .wrap#ten 
+                                        .title  白貓 - 愛美貓
+                                        img(src="source/img/cat/05.png", alt="")
+                                        
+                                        .card-content 
+                                            
+                                            p.over_md "貓咪化妝品定番""Paul&Joe""，限量白貓雜貨超欠收！"
+                                            p.under_md "貓咪化妝品定番""Paul&Joe""，
+                                                br
+                                                |限量白貓雜貨超欠收！"
+                                            a(href="https://www.japaholic.com/tw/article/844247/" target="_blank" title="看文章去喵").button 看文章去喵
+                            .carousel-item
+                                .wrap-outside 
+                                    .wrap#seven 
+                                        .title 虎斑貓 - 更多貓貓
+                                        img(src="source/img/cat/03.png", alt="")
+                                        
+                                        .card-content 
+                                            
+                                            p.over_md 貓咪文章一次看個夠！Japaholic貓咪文章總覽
+                                            p.under_md 貓咪文章一次看個夠！
+                                                br
+                                                |Japaholic貓咪文章總覽
+                                            a(href="https://www.japaholic.com/tw/tags/%e8%b2%93/" target="_blank" title="看文章去喵").button 看文章去喵
+                        ol.carousel-indicators
+                            li.active(data-bs-target="#catpost" data-bs-slide-to="0")
+                            li(data-bs-target="#catpost" data-bs-slide-to="1")
+                            li(data-bs-target="#catpost" data-bs-slide-to="2")
+                            li(data-bs-target="#catpost" data-bs-slide-to="3")
+                            li(data-bs-target="#catpost" data-bs-slide-to="4")
+                            li(data-bs-target="#catpost" data-bs-slide-to="5")
+                        a.carousel-control-prev(href="#catpost" role="button" data-bs-slide="prev") 
+                            span.carousel-control-prev-icon(aria-hidden="true")
+                            span.visually-hidden Previous 
+                        a.carousel-control-next(href="#catpost" role="button" data-bs-slide="next") 
+                            span.carousel-control-next-icon(aria-hidden="true")
+                            span.visually-hidden Next 
+
+                 
+                    
+
+
+            section#chatbot 
+                .container 
+                    .wrap 
+                        img.title(src="source/img/logo/chatbox-logo.png", alt="")
+                        .content
+                            .img-wrap.screen.under_xl
+                                img(src="source/img/screen/chatbox-phone.png", alt="")
+                            p.over_xl 如果有一天，我變成貓，會是哪一種貓呢？快點擊下面按鈕連結測出你的隱藏貓咪性格吧!
+                            .wrap-inside.under_xl
+
+                                p 如果有一天，我變成貓，會是哪一種貓呢？快點擊下面按鈕連結測出你的隱藏貓咪性格吧!
+                                .img-wrap.cat
+                                    img(src="source/img/cat/31.png", alt="")
+                            .img-wrap.cat.over_xl
+                                img(src="source/img/cat/31.png", alt="")
+                        a(href="https://r.botbonnie.com/5xrCI" target="_blank" title="快來測驗自己的貓咪性格是哪個吧").button
+                            .img-wrap.line
+                                img(src="source/img/logo/line-logo.png", alt="")
+                            .img-wrap.jh
+                                img(src="source/img/logo/logo.png", alt="")
+                            .p-wrap 
+                                p 喵喵心理測驗GO
+                                .img-wrap.arrow 
+                                    img(src="source/img/arrow/arrow.png", alt="")   
+                    
+                    .img-wrap.screen.over_xl
+                        img(src="source/img/screen/chatbox-phone.png", alt="")
+                                 
+
+            section#sns
+                .container
+                    img.over_xl(src="source/img/screen/chatbox-phone2.png", alt="") 
+                    .wrap
+                        .img-wrap.title 
+                            img.title(src="source/img/logo/sns-logo.png", alt="")
+                        
+                        
+                        .content.over_xl
+                            .img-wrap.cat.over_xl
+                                img(src="source/img/cat/sns-cat-1.png", alt="")
+                            p.over_xl 喔買尬，我變成貓貓了～
+                                br
+                                |張開嘴巴還有驚喜喔！
+                                br
+                                |記得打開手機聲音，在IG分享你的貓貓姿態吧！ 
+                            
+                        .inside-wrap.under_xl_flex
+                            .wrap
+                            p.content 喔買尬，我變成貓貓了～
+                                br
+                                |張開嘴巴還有驚喜喔！
+                                br
+                                |記得打開手機聲音，在IG分享你的貓貓姿態吧！
+                            img.cat(src="source/img/cat/sns-cat.png", alt="")
+                            .img-wrap.screen
+                                img(src="source/img/screen/chatbox-phone2.png", alt="") 
+                        .button(type="button" data-bs-toggle="modal" data-bs-target="#ig-link")
+                            .img-wrap.ig
+                                img(src="source/img/logo/igfilter-logo.png", alt="")
+                            .img-wrap.jh
+                                img(src="source/img/logo/logo.png", alt="")
+                            .p-wrap 
+                                p 喵喵IG濾鏡GO
+                            
+                            
+                        .modal.fade.ig-link(tabindex="-1" aria-labelledby="ig-link" aria-hidden="true")#ig-link
+                            .modal-dialog.modal-dialog-centered.modal-xl
+                                .modal-content
+                                    .modal-header 
+                                        h5.modal-title.over_md 來玩可愛貓咪
+                                            span.fab.fa-instagram 
+                                            | Instagram濾鏡
+                                        h5.modal-title.under_md 來玩可愛貓咪
+                                            span.fab.fa-instagram 
+                                            | IG濾鏡
+                                            
+                                        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+                                    .modal-body
+                                        .wrap-outside
+                                            .wrap-inside
+                                                .title 好想當貓貓
+                                                a(href="https://www.instagram.com/ar/189596743026350" target="_blank" title="好想當一隻貓喔><,快來玩濾鏡!") 
+                                                    img.qrcode(src="source/img/logo/ig-filter-cat.png", alt="")
+                                                
+                                                
+
+                                            .wrap-inside
+                                                .title 奴才我跟你說
+                                                a(href="https://www.instagram.com/ar/330046848458634" target="_blank" title="究竟貓主子想對貓奴說些什麼呢?快來玩濾鏡!") 
+                                                    img.qrcode(src="source/img/logo/ig-filter-text.png", alt="")
+                                        .notice.over_xl_inline  ↑ 使用手機/平板的讀者可以直接點擊QR Code 開啟濾鏡 ↑
+                                        .notice.under_xl_inline  ↑ 使用手機/平板的讀者↑ 
+                                            br
+                                            |可以直接點擊QR Code 
+                                            br
+                                            |開啟濾鏡 
+                                            
+            
+            
+            section#share
+                
+                .container
+                    .title 
+                        img(src="source/img/logo/share-logo.png", alt="")
+                    .video
+                        iframe.left(src="https://www.youtube.com/embed/weGSNmpV7wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen) 
+                        iframe.right(src="https://www.youtube.com/embed/_e14iAwCH68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen) 
+                    .img-wrap#outside
+                        img.skretchboard(src="source/img/bg/skretchboard.png", alt="") 
+                    .content 
+                        .title 
+                            img(src="source/img/logo/lottory-logo.png", alt="") 
+                        .small_title.over_sm_inline Japaholic精心準備兩款貓貓盒要送給各位！
+                        .small_title.under_sm_inline Japaholic精心準備
+                            br
+                            |兩款貓貓盒要送給各位！
+                        .wrap#cp  
+                            p.over_md 分別是給貓咪的『貓主子盒』，以及給人類的『貓奴才盒』
+                                br
+                                span 抽獎方式如下：
+                            p.under_md 分別是給貓咪的『貓主子盒』，
+                                br
+                                |以及給人類的『貓奴才盒』
+                                br
+                                span 抽獎方式如下：
+                            .inside-wrap
+                                .for_ppl 
+                                    img(src="source/img/logo/master-logo.png", alt="")
+                                    p 玩
+                                        span
+                                            a(href="#chatbot")  "如果我就是貓"
+                                        |心理測驗，截下測驗結果並在
+                                        br
+                                        |Japaholic FB粉絲專頁，
+                                        br
+                                        |貓奴才盒抽獎貼文下方留言，
+                                        br
+                                        | 就有機會把整盒帶回家！
+                                    .img-wrap#inside.under_xl 
+                                        .button
+                                            img(src="source/img/prize/forppl.png", alt="")
+                                        
+                                    .button_wrap
+                                        a(href="https://www.facebook.com/japaholic.tw" target="_blank" title="快來分享自己的心理測驗就可以抽獎喔!").button
+                                            .img-wrap.fb
+                                                img(src="source/img/logo/fb-logo.png", alt="")
+                                            
+                                            .p-wrap 
+                                                p 貓奴才盒抽獎GO
+                                            .img-wrap.arrow 
+                                                img(src="source/img/arrow/arrow.png", alt="")  
+                                .img-wrap#inside.over_xl 
+                                    .button
+                                        img(src="source/img/prize/forppl.png", alt="")
+                                    
+                                                            
+
+                                                     
+                            .inside-wrap.below
+                                .img-wrap#inside.over_xl 
+                                    .button  
+                                        img(src="source/img/prize/forcat.png", alt="")             
+                                     
+                                  
+                                .for_cat 
+                                    img(src="source/img/logo/catbox-logo.png", alt="")
+                                    p 玩
+                                        span
+                                            a(href="#sns")  "好想當那隻貓"
+                                        |IG濾鏡，截下使用畫面並在
+                                        br
+                                        |Japaholic FB粉絲專頁，
+                                        br
+                                        |貓主子盒抽獎貼文下方留言，
+                                        br
+                                        | 就有機會把整盒帶回家！
+
+                                    .img-wrap#inside.under_xl 
+                                        .button
+                                            img(src="source/img/prize/forcat.png", alt="")             
+                                        
+                                    .button_wrap
+                                        a(href="https://www.facebook.com/japaholic.tw" target="_blank" title="快來分享自己的可愛濾鏡截圖就可以抽獎喔!").button
+                                            .img-wrap.fb
+                                                img(src="source/img/logo/fb-logo.png", alt="")
+                                            
+                                            .p-wrap 
+                                                p 貓主子盒抽獎GO
+                                            .img-wrap.arrow 
+                                                img(src="source/img/arrow/arrow.png", alt="") 
+                    
+
+            section#sponser 
+                .container
+                    .title-wrap
+                        img.title(src="source/img/logo/sponser-logo.png", alt="")
+                        
+                    .logo-wrap 
+                        .img-wrap
+                            a(href="https://senstea.misssense.com.tw/" target="_blank" title="快來 森小姐的茶店 挑個好喝得茶包吧～")    
+                                img#left(src="source/img/logo/tea-logo.svg", alt="")
+                            a(href="https://www.3u-life.com/" target="_blank" title="快來 3U LIFE 幫貓主子買個好東西吧～")     
+                                img#right(src="source/img/logo/3ulife-logo.svg", alt="")
+                        .img-wrap
+                            a(href="https://www.meow-servant.com/" target="_blank") 
+                                img#left(src="source/img/logo/meow-logo.svg", alt="" title="貓主子餓了!!! 快來 貓皇奴 買好吃的罐罐～") 
+                            a(href="https://www.facebook.com/PaulJoeBeauteTaiwan" target="_blank") 
+                                img#right(src="source/img/logo/paul-logo.svg", alt="" title="喵喵我啊還是喜歡貓奴化妝的樣子!! 快來 PAUL&JOE 挑~")
+                
+
+
+        footer 
+            img#cat.over_lg(src="source/img/cat/18.png", alt="")
+            img#cat.over_sm(src="source/img/cat/16.png", alt="")
+            .wrap 
+                .inside-wrap
+                    .jh-logo 
+                        a(href="https://www.japaholic.com/tw/" target="_blank" title="前往 Japaholic官網") 
+                            img(src="source/img/logo/logo.png", alt="")
+                        .sns-icon 
+                            a(href="https://www.instagram.com/japaholic_official/" target="_blank" title="快追蹤 Japaholic IG!")
+                                i.fab.fa-instagram
+                            a(href="https://zh-tw.facebook.com/japaholic.tw/" target="_blank" title="快追蹤 Japaholic 臉書粉絲團!")
+                                i.fab.fa-facebook
+                            a(href="https://page.line.me/rpe4582o?openQrModal=true" target="_blank" title="快加 Japaholic LINE 官方帳號好友!")
+                                i.fab.fa-line
+                            a(href="https://www.youtube.com/channel/UC7b3V0vonq9US6Yz399_hDQ" target="_blank" title="快訂閱 Japaholic Youtube 頻道!")  
+                                i.fab.fa-youtube  
+                    .cat-logo 
+                        img(src="source/img/logo/cat-logo.png", alt="")
+                p.mail
+                    |合作洽談：
+                    span
+                        a(href="mailto:support@microad.tw" target="_blank" title="快來跟Japaholic一起打造許多好玩的企劃合作吧!") support@microad.tw
+                a(href="https://microad.tw/" target="_blank" title="日商台灣微告官網").microad ⓒ MicroAd Taiwan, 2021
+            img#cat.over_sm(src="source/img/cat/17.png", alt="")
+            img#cat.over_lg(src="source/img/cat/19.png", alt="")
+        
+
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-58VMF8Z' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+        
+
+        script(src="js/all.js")
