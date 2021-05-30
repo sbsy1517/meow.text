@@ -1713,16 +1713,16 @@ section#sponser .container .title-wrap {
           justify-content: center;
 }
 section#sponser .container .title-wrap img.title {
-  width: 600px;
+  height: 200px;
 }
 @media (max-width: 1200px) {
   section#sponser .container .title-wrap img.title {
-    width: 400px;
+    height: 120px;
   }
 }
 @media (max-width: 576px) {
   section#sponser .container .title-wrap img.title {
-    width: 220px;
+    height: 60px;
   }
 }
 section#sponser .container .title-wrap .small-title {
@@ -1752,7 +1752,7 @@ section#sponser .container .logo-wrap .img-wrap {
 }
 @media (max-width: 576px) {
   section#sponser .container .logo-wrap .img-wrap {
-    margin: 20px 0 0;
+    margin: 10px 0 0;
   }
 }
 section#sponser .container .logo-wrap .img-wrap a {
