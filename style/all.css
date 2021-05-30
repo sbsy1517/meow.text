@@ -146,6 +146,10 @@ html, body {
   overflow-x: hidden;
 }
 
+div, p, section, header {
+  border: 1px solid #000;
+}
+
 a {
   text-decoration: none;
 }
@@ -1340,20 +1344,17 @@ section#share {
     padding: 30px 0;
   }
 }
-section#share .container .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+section#share .container .title img {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 @media (max-width: 768px) {
   section#share .container .title img {
     width: 500px;
   }
 }
-@media (max-width: 768px) and (max-width: 576px) {
+@media (max-width: 576px) {
   section#share .container .title img {
     width: 250px;
   }
@@ -1704,15 +1705,10 @@ section#sponser {
     padding: 20px 0;
   }
 }
-section#sponser .container .title-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 section#sponser .container .title-wrap img.title {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   height: 200px;
 }
 @media (max-width: 1200px) {

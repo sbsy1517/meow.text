@@ -5,8 +5,8 @@ html,body
     width: 100%
     overflow-x: hidden
      
-// div,p,section,header
-//     border: 1px solid #000
+div,p,section,header
+    border: 1px solid #000
 a
     text-decoration: none 
 
@@ -714,13 +714,12 @@ section#share
         padding: 30px 0
     .container
         .title
-            display: flex
-            justify-content: center
-            +md
-                img
+            img
+                +x-center
+                +md
                     width: 500px
-                    +sm
-                        width: 250px
+                +sm
+                    width: 250px
         .video
             display: flex
             justify-content: center
@@ -912,9 +911,9 @@ section#sponser
         padding: 20px 0
     .container
         .title-wrap
-            display: flex
-            justify-content: center
+            
             img.title
+                +x-center
                 height: 200px
                 +xl
                     height: 120px
