@@ -146,10 +146,6 @@ html, body {
   overflow-x: hidden;
 }
 
-div, p, section, header {
-  border: 1px solid #000;
-}
-
 a {
   text-decoration: none;
 }
