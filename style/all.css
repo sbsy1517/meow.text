@@ -941,7 +941,7 @@ section#sns .container {
           justify-content: center;
 }
 section#sns .container img.over_xl {
-  height: 550px;
+  height: 600px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -956,7 +956,7 @@ section#sns .container .wrap {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 50px;
+  margin-left: 40px;
   padding: 10px 0px 10px 40px;
 }
 @media (max-width: 1200px) {
