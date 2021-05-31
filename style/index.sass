@@ -723,19 +723,17 @@ section#share
         .video
             display: flex
             justify-content: center
-            margin: 30px 0  250px
-            +xxxl
-                margin: 30px 0 350px
-            +xl
-                margin: 30px 0 1300px
+            margin: 30px 0  50px
             +lg
                 flex-direction: column
                 align-items: center
-                margin: 30px 0 1200px
+                margin: 30px 0 50px
+            +md
+                margin: 30px 0 
             +sm
-                margin: 30px 0 1000px
+                margin: 30px 0 20px
             +se 
-                margin: 30px 0 1010px
+                margin: 30px 0 20px
         iframe
             width: 40%
             height: 300px
@@ -763,34 +761,61 @@ section#share
                 width: 315px
             img.skretchboard
                 width: 100%
+                +xl
+                    height: 1900px
                 +md
                     width: 600px
+                    height: 1700px
                 +sm
                     width: 350px
+                    height: 1330px
                 +se
                     width: 315px
         .content
             position: absolute
-            left: 100px
-            bottom: 50px
+            left: 120px
             width: 1000px
+            bottom: 180px
+            padding: 50px 30px 30px
+            background-color: rgba(225,225,225,0.3)
+            border-radius: 50px
             +xxxl
                 left: 80px
                 bottom: 60px
                 width: 900px
+                padding: 30px
             +xl
-                width: 800px
+                width: 650px
+                padding: 30px 20px 50px
+                left: 130px
+                bottom: 100px
             +lg
                 width: 550px
+                left: 65px
+                bottom: 130px
             +md
                 +x-center
-                bottom: 40px
-                width: 400px
+                left: 47.5%
+                bottom: 80px
+                width: 480px
+                padding: 20px 5px 30px
+                border-radius: 30px
             +sm
                 width: 320px
+                background-color: transparent
+                bottom: 30px
             .title
                 img
-                    width: 450px
+                    width: 600px
+                    +xxxl
+                        width: 500px
+                    +xxl
+                        width: 400px
+                    +xl
+                        width: 430px
+                    +md
+                        width: 380px
+                        
                     +sm
                         width: 280px
             .small_title
@@ -803,12 +828,14 @@ section#share
                 letter-spacing: 1px
                 color: black
                 background-color: #ffffffc2
+                +md
+                    text-align: center
+                    line-height: 1.7
+                    padding: 10px 20px
+                    font-size: 20px
                 +sm
                     display: none
                     padding: 10px 15px
-                    font-size: 20px
-                    text-align: center
-                    line-height: 1.7
             .wrap#cp
                 p
                 margin-top: 20px
@@ -839,7 +866,8 @@ section#share
                     margin-top: 20px
                     align-items: center
                     justify-content: space-around
-                    margin-bottom: 50px
+                    margin-bottom: 10px
+                    margin-top: 50px
                     +md
                         margin-bottom: 0
                     .for_cat,.for_ppl
@@ -851,9 +879,18 @@ section#share
                             +xl
                                 width: 50%
                             +md
-                                width: 100%
+                                width: 70%
                             +sm
                                 width: 200px
+                        
+                        span
+                            padding: 5px
+                            a
+                               color: #ffb95e 
+                               filter: drop-shadow(1px 1px 0px #00000080)
+                               font-weight: bold
+                               font-size: 23px
+
                             
                         .button_wrap
                             .button
@@ -881,8 +918,11 @@ section#share
                                      width: 25px
                                      +xl
                                         width: 15px
-                                     img
-                                         width: 100%
+                                        img
+                                            width: 100%
+                                     
+                                         
+                                         
                     .img-wrap#inside
                         width: 50%
                         +xl

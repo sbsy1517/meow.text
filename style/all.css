@@ -1362,17 +1362,7 @@ section#share .container .video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px 0 250px;
-}
-@media (max-width: 1400px) {
-  section#share .container .video {
-    margin: 30px 0 350px;
-  }
-}
-@media (max-width: 1200px) {
-  section#share .container .video {
-    margin: 30px 0 1300px;
-  }
+  margin: 30px 0 50px;
 }
 @media (max-width: 991px) {
   section#share .container .video {
@@ -1383,17 +1373,22 @@ section#share .container .video {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 30px 0 1200px;
+    margin: 30px 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  section#share .container .video {
+    margin: 30px 0;
   }
 }
 @media (max-width: 576px) {
   section#share .container .video {
-    margin: 30px 0 1000px;
+    margin: 30px 0 20px;
   }
 }
 @media (max-width: 320px) {
   section#share .container .video {
-    margin: 30px 0 1010px;
+    margin: 30px 0 20px;
   }
 }
 section#share .container iframe {
@@ -1448,14 +1443,21 @@ section#share .container .left {
 section#share .container .img-wrap#outside img.skretchboard {
   width: 100%;
 }
+@media (max-width: 1200px) {
+  section#share .container .img-wrap#outside img.skretchboard {
+    height: 1900px;
+  }
+}
 @media (max-width: 768px) {
   section#share .container .img-wrap#outside img.skretchboard {
     width: 600px;
+    height: 1700px;
   }
 }
 @media (max-width: 576px) {
   section#share .container .img-wrap#outside img.skretchboard {
     width: 350px;
+    height: 1330px;
   }
 }
 @media (max-width: 320px) {
@@ -1465,25 +1467,34 @@ section#share .container .img-wrap#outside img.skretchboard {
 }
 section#share .container .content {
   position: absolute;
-  left: 100px;
-  bottom: 50px;
+  left: 120px;
   width: 1000px;
+  bottom: 180px;
+  padding: 50px 30px 30px;
+  background-color: rgba(225, 225, 225, 0.3);
+  border-radius: 50px;
 }
 @media (max-width: 1400px) {
   section#share .container .content {
     left: 80px;
     bottom: 60px;
     width: 900px;
+    padding: 30px;
   }
 }
 @media (max-width: 1200px) {
   section#share .container .content {
-    width: 800px;
+    width: 650px;
+    padding: 30px 20px 50px;
+    left: 130px;
+    bottom: 100px;
   }
 }
 @media (max-width: 991px) {
   section#share .container .content {
     width: 550px;
+    left: 65px;
+    bottom: 130px;
   }
 }
 @media (max-width: 768px) {
@@ -1491,17 +1502,42 @@ section#share .container .content {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 40px;
-    width: 400px;
+    left: 47.5%;
+    bottom: 80px;
+    width: 480px;
+    padding: 20px 5px 30px;
+    border-radius: 30px;
   }
 }
 @media (max-width: 576px) {
   section#share .container .content {
     width: 320px;
+    background-color: transparent;
+    bottom: 30px;
   }
 }
 section#share .container .content .title img {
-  width: 450px;
+  width: 600px;
+}
+@media (max-width: 1400px) {
+  section#share .container .content .title img {
+    width: 500px;
+  }
+}
+@media (max-width: 1280px) {
+  section#share .container .content .title img {
+    width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  section#share .container .content .title img {
+    width: 430px;
+  }
+}
+@media (max-width: 768px) {
+  section#share .container .content .title img {
+    width: 380px;
+  }
 }
 @media (max-width: 576px) {
   section#share .container .content .title img {
@@ -1521,13 +1557,18 @@ section#share .container .content .small_title {
   color: black;
   background-color: #ffffffc2;
 }
+@media (max-width: 768px) {
+  section#share .container .content .small_title {
+    text-align: center;
+    line-height: 1.7;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
 @media (max-width: 576px) {
   section#share .container .content .small_title {
     display: none;
     padding: 10px 15px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.7;
   }
 }
 section#share .container .content .wrap#cp {
@@ -1573,7 +1614,8 @@ section#share .container .content .wrap#cp .inside-wrap {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 @media (max-width: 768px) {
   section#share .container .content .wrap#cp .inside-wrap {
@@ -1598,13 +1640,23 @@ section#share .container .content .wrap#cp .inside-wrap .for_cat img, section#sh
 }
 @media (max-width: 768px) {
   section#share .container .content .wrap#cp .inside-wrap .for_cat img, section#share .container .content .wrap#cp .inside-wrap .for_ppl img {
-    width: 100%;
+    width: 70%;
   }
 }
 @media (max-width: 576px) {
   section#share .container .content .wrap#cp .inside-wrap .for_cat img, section#share .container .content .wrap#cp .inside-wrap .for_ppl img {
     width: 200px;
   }
+}
+section#share .container .content .wrap#cp .inside-wrap .for_cat span, section#share .container .content .wrap#cp .inside-wrap .for_ppl span {
+  padding: 5px;
+}
+section#share .container .content .wrap#cp .inside-wrap .for_cat span a, section#share .container .content .wrap#cp .inside-wrap .for_ppl span a {
+  color: #ffb95e;
+  -webkit-filter: drop-shadow(1px 1px 0px #00000080);
+          filter: drop-shadow(1px 1px 0px #00000080);
+  font-weight: bold;
+  font-size: 23px;
 }
 section#share .container .content .wrap#cp .inside-wrap .for_cat .button_wrap .button, section#share .container .content .wrap#cp .inside-wrap .for_ppl .button_wrap .button {
   display: -webkit-box;
@@ -1652,9 +1704,9 @@ section#share .container .content .wrap#cp .inside-wrap .for_cat .button_wrap .b
   section#share .container .content .wrap#cp .inside-wrap .for_cat .button_wrap .button .img-wrap.arrow, section#share .container .content .wrap#cp .inside-wrap .for_ppl .button_wrap .button .img-wrap.arrow {
     width: 15px;
   }
-}
-section#share .container .content .wrap#cp .inside-wrap .for_cat .button_wrap .button .img-wrap.arrow img, section#share .container .content .wrap#cp .inside-wrap .for_ppl .button_wrap .button .img-wrap.arrow img {
-  width: 100%;
+  section#share .container .content .wrap#cp .inside-wrap .for_cat .button_wrap .button .img-wrap.arrow img, section#share .container .content .wrap#cp .inside-wrap .for_ppl .button_wrap .button .img-wrap.arrow img {
+    width: 100%;
+  }
 }
 section#share .container .content .wrap#cp .inside-wrap .img-wrap#inside {
   width: 50%;
